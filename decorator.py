@@ -9,7 +9,7 @@ def decorator_allows_return_only_str(func):
 @decorator_allows_return_only_str
 def calculate_cylinder_volume(radius, height: int):
     formula = 3.14 * (radius ** 2) * height
-    return type(formula)
+    return formula
 
 
 calculate_cylinder_volume(15, 2)
